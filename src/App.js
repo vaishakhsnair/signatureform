@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Signature from '@uiw/react-signature';
 import './App.css';
 import generatePDF from './PDFHandler';
+import Footer from './Footer';
 import { PDFViewer, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
@@ -151,6 +152,8 @@ function App() {
       >
         Generate PDF
       </button>
+
+      <Footer />
     </div>
   );
 }
